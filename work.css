@@ -1,0 +1,217 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.bcground{
+    background: url(assets/Hero.png) top center;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1000;
+}
+.head{
+    margin: 0 auto;
+}
+h1{
+    font-size: 40px;
+    /* font-family: PingFangTC-Regular; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    letter-spacing: 3.98px;
+    margin-bottom: 60px;
+
+}
+.head select {
+    width: 35%;
+    margin: 20px auto 0px auto;
+    display: block;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    border: 3px solid #fff;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.popular{
+    width: 800px;
+    height: 112px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 26px;
+    margin-top: -20px;
+    border-radius: 5px;
+    box-shadow:0px 0px 9px #cccccc;
+    z-index: 1001;
+}
+.popular div {
+    float: left;
+    font-size: 18px;
+}
+.popular ul{
+    display: block;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.clear{
+    clear: both;
+}
+.popular ul li{
+    display: inline-block;
+    width: 130px;
+    height: 42px;
+    margin-right: 23px;
+    line-height: 3;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    /* background-color: palevioletred; */
+
+}
+.popular ul li:nth-child(1){
+    background-color: #8A82CC;
+}
+.popular ul li:nth-child(2){
+    background-color:#FFA782 ;
+}
+.popular ul li:nth-child(3){
+    background-color:#F5D005 ;
+}
+.popular ul li:nth-child(4){
+    background-color: #559AC8;
+}
+hr{
+    width: 100%;
+    border:1px dotted #559AC8;
+    margin-top: 50px;
+}
+.downcircle{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #559AC8;
+    border-radius: 50px;
+    margin: -20px auto 0px auto;
+}
+.bbx{
+    border: 1px solid yellow;
+    display: inline-block;
+    width: 550px;
+    height: 70px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.list{
+    width: 1200px;
+    /* height: 500px; */
+    margin: 0 auto;
+}
+/*---------------------------------*/
+.llist{
+    width: 1200px;
+    /* height: 500px; */
+    margin: 0 auto;
+}
+.bbox{
+    border: 2px solid black;
+    display: inline-block;
+    width: 550px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+p{
+    margin: 10px;
+}
+p:nth-child(2){
+    /* content: " "; */
+    background: url(assets/icons_clock.png) no-repeat center;
+    padding: 0 10px 0 20px;
+}
+p:nth-child(3){
+    /* content: " "; */
+    background: url(assets/icons_pin.png) no-repeat center;
+    padding: 0 10px 0 20px;
+}
+p:nth-child(4){
+    /* content: " "; */
+    background: url(assets/icons_phone.png) no-repeat center;
+    padding: 0 10px 0 20px;
+}
+.pic{
+    width: 550px;
+    height: 250px;
+    border: 1px solid palevioletred;
+    position: relative;
+}
+h3{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+h4{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+h5{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-weight: bold;
+    background: url(assets/icons_tag.png) no-repeat center;
+}
+/*---------------------------------*/
+.footer{
+    width: 100%;
+    height: 90px;
+    background-color: #559AC8;
+    position: fixed;
+    bottom: 0px;
+}
