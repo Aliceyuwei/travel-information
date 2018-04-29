@@ -2642,7 +2642,6 @@ var data = [
         var total = data.length;
         var str = '';
         var strtext = '';
-        console.log("you did");
         strtext="苓雅區"
         linelintext.innerHTML = strtext;
         for(var i = 0;i<total; i++){
@@ -2662,7 +2661,6 @@ var data = [
         var total = data.length;
         var str = '';
         var strtext = '';
-        console.log("you did");
         strtext="三民區"
         linelintext.innerHTML = strtext;
         for(var i = 0;i<total; i++){
@@ -2683,7 +2681,6 @@ var data = [
         var str = '';
         // var strCircle = '<div class="downcircle"><img src="assets/icons_down.png" alt="" ></div>';
         var strtext = '';
-        console.log("you did");
         strtext="新興區"
         // strCircle.innerHTML = strtext;
         linelintext.innerHTML = strtext;
@@ -2704,7 +2701,6 @@ var data = [
         var total = data.length;
         var str = '';
         var strtext = '';
-        console.log("you did");
         strtext="小港區"
         linelintext.innerHTML = strtext;
         for(var i = 0;i<total; i++){
