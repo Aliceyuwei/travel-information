@@ -2600,22 +2600,121 @@ var data = [
     Id: "C1_397000000A_000164"
     }
     ];
-    // console.log(data.length);
+
+//select
+
     var selectList = document.querySelector('.selectList');
     selectList.addEventListener('change',update,false);
     function update(e) {
         var list = document.querySelector('.list');
+        var linelintext = document.querySelector('.lineline');
+        console.log(linelintext);
         var total = data.length;
         var str = '';
+        var strtext = '';
         var select = e.target.value;
         console.log(select);
+        for(var i = 0;i<total; i++){
+            if(select==data[i].Zone){
+                var contentText = '<div class="site">'+data[i].Zone+'</div>';
+                strtext=contentText;
+            }
+        }
+        linelintext.innerHTML = strtext;
         //use innerHTML
         for(var i = 0;i<total; i++){
             if(select==data[i].Zone){
-                var content =  '<div class="bbx"><div>'+data[i].Ticketinfo+'</div><div>'+data[i].Tel+'</div><div>'+data[i].Add+'</div></div>';
+                var content =  '<div class="bbx"><div class="pic"><img src= '+data[i].Picture1+' width="570px" height="250px"><h3>'+data[i].Name+'</h3><h4>'+data[i].Zone+'</h4></div><p>'+data[i].Opentime+'</p><p>'+data[i].Add+'</p><p>'+data[i].Tel+'</p><p class="oopp">'+data[i].Ticketinfo+'</p></div>';
 
                 str+=content;
             }
         }
         list.innerHTML = str;
     }
+
+//click
+
+//苓雅區
+    var linya =document.querySelector('.linya');
+    linya.addEventListener('click',function(e){
+        var list = document.querySelector('.list');
+        var linelintext = document.querySelector('.lineline');
+        var total = data.length;
+        var str = '';
+        var strtext = '';
+        console.log("you did");
+        strtext="苓雅區"
+        linelintext.innerHTML = strtext;
+        for(var i = 0;i<total; i++){
+            if(data[i].Zone=="苓雅區"){
+                var content =  '<div class="bbx"><div class="pic"><img src= '+data[i].Picture1+' width="570px" height="250px"><h3>'+data[i].Name+'</h3><h4>'+data[i].Zone+'</h4></div><p>'+data[i].Opentime+'</p><p>'+data[i].Add+'</p><p>'+data[i].Tel+'</p><p class="oopp">'+data[i].Ticketinfo+'</p></div>';
+
+                str+=content;
+            }
+        }
+        list.innerHTML = str;
+    },false);
+//三民區
+    var saming =document.querySelector('.saming');
+    saming.addEventListener('click',function(e){
+        var list = document.querySelector('.list');
+        var linelintext = document.querySelector('.lineline');
+        var total = data.length;
+        var str = '';
+        var strtext = '';
+        console.log("you did");
+        strtext="三民區"
+        linelintext.innerHTML = strtext;
+        for(var i = 0;i<total; i++){
+            if(data[i].Zone=="三民區"){
+                var content =  '<div class="bbx"><div class="pic"><img src= '+data[i].Picture1+' width="570px" height="250px"><h3>'+data[i].Name+'</h3><h4>'+data[i].Zone+'</h4></div><p>'+data[i].Opentime+'</p><p>'+data[i].Add+'</p><p>'+data[i].Tel+'</p><p class="oopp">'+data[i].Ticketinfo+'</p></div>';
+
+                str+=content;
+            }
+        }
+        list.innerHTML = str;
+    },false);
+//新興區
+    var newnew =document.querySelector('.newnew');
+    newnew.addEventListener('click',function(e){
+        var list = document.querySelector('.list');
+        var linelintext = document.querySelector('.lineline');
+        var total = data.length;
+        var str = '';
+        // var strCircle = '<div class="downcircle"><img src="assets/icons_down.png" alt="" ></div>';
+        var strtext = '';
+        console.log("you did");
+        strtext="新興區"
+        // strCircle.innerHTML = strtext;
+        linelintext.innerHTML = strtext;
+        for(var i = 0;i<total; i++){
+            if(data[i].Zone=="新興區"){
+                var content =  '<div class="bbx"><div class="pic"><img src= '+data[i].Picture1+' width="570px" height="250px"><h3>'+data[i].Name+'</h3><h4>'+data[i].Zone+'</h4></div><p>'+data[i].Opentime+'</p><p>'+data[i].Add+'</p><p>'+data[i].Tel+'</p><p class="oopp">'+data[i].Ticketinfo+'</p></div>';
+
+                str+=content;
+            }
+        }
+        list.innerHTML = str;
+    },false);
+//鹽埕區
+    var port =document.querySelector('.port');
+    port.addEventListener('click',function(e){
+        var list = document.querySelector('.list');
+        var linelintext = document.querySelector('.lineline');
+        var total = data.length;
+        var str = '';
+        var strtext = '';
+        console.log("you did");
+        strtext="小港區"
+        linelintext.innerHTML = strtext;
+        for(var i = 0;i<total; i++){
+            if(data[i].Zone=="小港區"){
+                var content =  '<div class="bbx"><div class="pic"><img src= '+data[i].Picture1+' width="570px" height="250px"><h3>'+data[i].Name+'</h3><h4>'+data[i].Zone+'</h4></div><p>'+data[i].Opentime+'</p><p>'+data[i].Add+'</p><p>'+data[i].Tel+'</p><p class="oopp">'+data[i].Ticketinfo+'</p></div>';
+
+                str+=content;
+            }
+        }
+        list.innerHTML = str;
+    },false);
+
+

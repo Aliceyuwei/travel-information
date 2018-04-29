@@ -127,91 +127,114 @@ h1{
 .popular ul li:nth-child(4){
     background-color: #559AC8;
 }
-hr{
-    width: 100%;
-    border:1px dotted #559AC8;
+.lineline{
+    color: #559AC8;
+    text-align: center;
+    font-size: 30px;
+    line-height: 5;
+    border-top:2px dotted #559AC8;
     margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.site{
+    color: #559AC8;
+    text-align: center;
+    font-size: 30px;
+    line-height: 5;
 }
 .downcircle{
     width: 20px;
     height: 20px;
     border: 2px solid #559AC8;
     border-radius: 50px;
-    margin: -20px auto 0px auto;
+    margin: -12px auto 0px auto;
+    position: relative;
+}
+.downcircle img{
+    position: absolute;
+    right: 2px;
+    top: 7px;
 }
 .bbx{
-    border: 1px solid yellow;
     display: inline-block;
-    width: 550px;
-    height: 70px;
+    width: 585px;
     margin-right: 10px;
     margin-bottom: 20px;
+    box-shadow: 3px 3px 3px 3px #9e9e9ed1;
+    position: relative;
+
 }
 .list{
     width: 1200px;
     /* height: 500px; */
     margin: 0 auto;
-}
-/*---------------------------------*/
-.llist{
-    width: 1200px;
-    /* height: 500px; */
-    margin: 0 auto;
-}
-.bbox{
-    border: 2px solid black;
-    display: inline-block;
-    width: 550px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    position: relative;
+    margin-bottom: 30px;
 }
 p{
     margin: 10px;
+    margin-left: 30px;
 }
 p:nth-child(2){
     /* content: " "; */
-    background: url(assets/icons_clock.png) no-repeat center;
+    background: url(assets/icons_clock.png) no-repeat ;
     padding: 0 10px 0 20px;
 }
 p:nth-child(3){
     /* content: " "; */
-    background: url(assets/icons_pin.png) no-repeat center;
+    background: url(assets/icons_pin.png) no-repeat ;
     padding: 0 10px 0 20px;
 }
 p:nth-child(4){
     /* content: " "; */
-    background: url(assets/icons_phone.png) no-repeat center;
+    background: url(assets/icons_phone.png) no-repeat ;
     padding: 0 10px 0 20px;
 }
 .pic{
-    width: 550px;
+    width: 570px;
     height: 250px;
-    border: 1px solid palevioletred;
+    /* border: 1px solid palevioletred; */
+    margin: 0 auto;
+    margin-top: 5px;
     position: relative;
 }
 h3{
     position: absolute;
     left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: serif;
+    color: #fff;
     bottom: 10px;
 }
 h4{
     position: absolute;
     bottom: 10px;
     right: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: ghostwhite;
 }
-h5{
+.oopp{
     position: absolute;
-    right: 20px;
-    bottom: 10px;
+    right: 0px;
+    bottom: 0px;
     font-weight: bold;
-    background: url(assets/icons_tag.png) no-repeat center;
+    background: url(assets/icons_tag.png) no-repeat;
+    padding: 0 20px 0 30px;
 }
-/*---------------------------------*/
 .footer{
     width: 100%;
     height: 90px;
     background-color: #559AC8;
-    position: fixed;
-    bottom: 0px;
+}
+.footer div:nth-child(1){
+    color: #fff;
+    text-align: center;
+    line-height: 4;
+}
+.footer div:nth-child(2){
+    color: #F5D005;
+    text-align: center;
 }
